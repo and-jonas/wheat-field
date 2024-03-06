@@ -26,7 +26,7 @@ import imageio
 import cv2
 import flash
 from flash.image import SemanticSegmentation, SemanticSegmentationData
-from transforms2 import set_input_transform_options
+from utils.transforms import set_input_transform_options
 from multiprocessing import Manager, Process
 import SegmentationFunctions
 
@@ -83,8 +83,6 @@ class Segmentor:
         files = []
         for d in self.dirs_to_process:
             files.extend(glob.glob(f'{d}/*.{self.image_type}'))
-        # removes all Reference images
-        files = [f for f in files if "Ref" not in f]
         # removes all processed images
         if not self.overwrite:
             processed = glob.glob(f'{self.path_col_mask}/*.png')

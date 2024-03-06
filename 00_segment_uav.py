@@ -13,6 +13,7 @@
 
 from Processors.ImageSegmentor import ImageColorSegmentor
 
+# This must be the root directory
 base_dir = '/home/anjonas/kp-public/Evaluation/Hiwi/2023_herbifly_LTS'
 
 

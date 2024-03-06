@@ -29,7 +29,7 @@ import re
 
 # ======================================================================================================================
 
-# base directory
+# This must be the root directory
 workdir = "O:/Evaluation/Hiwi/2023_herbifly_LTS"
 
 # field names

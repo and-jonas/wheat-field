@@ -12,14 +12,16 @@
 
 from Processors.ImageSegmentor import Segmentor
 
-base_dir = "/home/anjonas/kp-public/Evaluation/validation/"
+# This must be the root directory
+base_dir = '/home/anjonas/kp-public/Evaluation/Hiwi/2023_herbifly_LTS/'
+process_dir = f'{base_dir}/validation/handheld'
 
 
 def run():
-    dirs_to_process = base_dir
-    dir_output = "/home/anjonas/kp-public/Evaluation/Hiwi/2023_herbifly_LTS/validation/seg"
-    dir_vegetation_model = "vegAnn_herbifly.pt"
-    dir_col_model = "segcol_rf.pkl"
+    dirs_to_process = [process_dir]
+    dir_output = f"{base_dir}/validation/seg"
+    dir_vegetation_model = f"{base_dir}/validation/models/vegAnn_herbifly.pt"
+    dir_col_model = f"{base_dir}/validation/models/segcol_rf.pkl"
     dir_patch_coordinates = None
     image_pre_segmentor = Segmentor(dirs_to_process=dirs_to_process,
                                     dir_vegetation_model=dir_vegetation_model,

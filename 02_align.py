@@ -27,8 +27,9 @@ from matplotlib import path
 # Handheld on UAV
 # ======================================================================================================================
 
-fh = "10m"  # flight height
+# This must be the root directory
 base = "O:/Evaluation/Hiwi/2023_herbifly_LTS"
+fh = "10m"  # flight height
 
 # input dirs
 coord_dir_hh = f"{base}/validation/frame_coord_handheld"
@@ -46,9 +47,7 @@ for d in [composite_dir, warped_mask_dir, warped_corners_dir, data_dir]:
     d.mkdir(exist_ok=True, parents=True)
 
 # fields
-# fields = ["Nennigkofen1", "Nennigkofen2", "Opfertshofen", "Volken", "Grafenried", "Steinmaur", "Treytorrens-P",
-#           "Oleyres", "Villars-le-G"]
-fields = ["Treytorrens-P",
+fields = ["Nennigkofen1", "Nennigkofen2", "Opfertshofen", "Volken", "Grafenried", "Steinmaur", "Treytorrens-P",
           "Oleyres", "Villars-le-G"]
 
 for field in fields:
