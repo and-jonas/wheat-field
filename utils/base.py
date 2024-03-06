@@ -3,7 +3,7 @@
 
 # Various helper functions
 
-# Author: Jonas Anderegg, ETH Zürich
+# Author: Jonas Anderegg, Simon Treier, Flavian Tschurr, ETH Zürich
 # Last edited: 2024-03-05
 
 # ======================================================================================================================
