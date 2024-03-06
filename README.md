@@ -4,7 +4,7 @@
 This repository contains code that can serve as a starting point for further analysis of the Wheat field UAV data set. 
 The code was also used for the reported technical validation and enables reproducing corresponding results. 
 
-<img src="https://github.com/and-jonas/wheat-field/blob/master/imgs/fields_orthos.png" width="400"> <img src="https://github.com/and-jonas/wheat-field/blob/master/imgs/composite.jpg" width="500">
+<img src="https://github.com/and-jonas/wheat-field/blob/master/imgs/fields_orthos.png" width="400"> <img src="https://github.com/and-jonas/wheat-field/blob/master/imgs/composite.jpg" width="350">
 
 
 ## Installation
